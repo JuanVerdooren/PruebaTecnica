@@ -12,9 +12,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/frontend",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "/workspaces/PruebaTecnica/PruebaTecnica/frontend/src/app/components/pantalla-busqueda/pantalla-busqueda.component.html",
+            "main": "/workspaces/PruebaTecnica/PruebaTecnica/frontend/src/app/components/pantalla-busqueda/pantalla-busqueda.component.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -29,7 +28,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "/workspaces/PruebaTecnica/PruebaTecnica/frontend/src/app/components/pantalla-busqueda/pantalla-busqueda.component.css"
             ],
             "scripts": []
           },

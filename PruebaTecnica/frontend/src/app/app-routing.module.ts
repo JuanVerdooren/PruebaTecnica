@@ -4,8 +4,9 @@ import { PantallaBusquedaComponent } from './components/pantalla-busqueda/pantal
 import { PantallaResumenComponent } from './components/pantalla-resumen/pantalla-resumen.component';
 
 const routes: Routes = [
-  { path: '', component: PantallaBusquedaComponent },
-  { path: 'resumen', component: PantallaResumenComponent },
+  { path: '', redirectTo: '/busqueda', pathMatch: 'full' },
+  { path: 'busqueda', component: PantallaBusquedaComponent },
+  { path: 'resumen', component: PantallaResumenComponent }
 ];
 
 @NgModule({
