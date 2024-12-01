@@ -4,8 +4,8 @@ import { ClienteService } from '../../services/cliente.service';
 
 @Component({
   selector: 'app-pantalla-busqueda',
-  templateUrl: './pantalla-busqueda.component.html',
-  styleUrls: ['./pantalla-busqueda.component.css']
+  templateUrl: './src/app/components/pantalla-busqueda/pantalla-busqueda.component.html',
+  styleUrls: ['./src/app/components/pantalla-busqueda.component.css']
 })
 export class PantallaBusquedaComponent {
   tipoDocumento = '';
