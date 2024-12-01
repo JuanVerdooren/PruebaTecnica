@@ -1,0 +1,17 @@
+h1 {
+    color: #2a9df4;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a.active {
+    font-weight: bold;
+  }
+  
