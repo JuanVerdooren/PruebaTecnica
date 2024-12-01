@@ -17,6 +17,7 @@
     "@angular-devkit/build-angular": "^19.0.2"
   },
   "dependencies": {
+    
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
     "@angular/core": "^15.2.10",
