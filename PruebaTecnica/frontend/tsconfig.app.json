@@ -14,8 +14,8 @@
       "resolveJsonModule": true
     },
     "files": [
-      "src/main.ts",
-      "src/polyfills.ts"
+      "/workspaces/PruebaTecnica/PruebaTecnica/frontend/src/app/components/pantalla-busqueda/pantalla-busqueda.component.ts",
+
     ],
     "include": [
       "src/**/*.d.ts"

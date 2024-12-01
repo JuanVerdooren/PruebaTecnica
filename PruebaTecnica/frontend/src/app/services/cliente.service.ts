@@ -10,7 +10,7 @@ export class ClienteService {
 
   constructor(private http: HttpClient) {}
 
-  obtenerCliente(tipo: string, numero: string): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/${tipo}/${numero}`);
+  obtenerCliente({ tipo, numero }: { tipo: string; numero: string; }): Observable<unknown> {
+    return this.http.get<unknown>(`${this.baseUrl}/${tipo}/${numero}`);
   }
 }

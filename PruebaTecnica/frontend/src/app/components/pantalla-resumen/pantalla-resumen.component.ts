@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./pantalla-resumen.component.css']
 })
 export class PantallaResumenComponent implements OnInit {
-  cliente: any = {};
+  cliente: unknown = {};
 
   constructor(private router: Router) {}
 
