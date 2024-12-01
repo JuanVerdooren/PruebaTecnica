@@ -1,43 +1,43 @@
-<div class="container mt-5">
-    <h2 class="text-center">Consulta de Cliente</h2>
-    <div class="card p-4 shadow">
-      <form>
-        <div class="form-group mb-3">
-          <label for="tipoDocumento">Tipo de Documento</label>
-          <select
-            class="form-select"
-            id="tipoDocumento"
-            [(ngModel)]="tipoDocumento"
-            name="tipoDocumento"
-            (change)="verificarCampos()"
-          >
-            <option value="" disabled selected>Seleccione...</option>
-            <option value="C">Cédula de Ciudadanía</option>
-            <option value="P">Pasaporte</option>
-          </select>
-        </div>
-        <div class="form-group mb-3">
-          <label for="numeroDocumento">Número de Documento</label>
-          <input
-            type="text"
-            id="numeroDocumento"
-            class="form-control"
-            [(ngModel)]="numeroDocumento"
-            name="numeroDocumento"
-            (input)="verificarCampos()"
-            placeholder="Ej: 1.234.567"
-          />
-          <small class="form-text text-muted">Debe tener entre 8 y 11 dígitos.</small>
-        </div>
-        <button
-          type="button"
-          class="btn btn-primary w-100"
-          [disabled]="!botonHabilitado"
-          (click)="buscarCliente()"
-        >
-          Buscar
-        </button>
-      </form>
-    </div>
+<div class="form-container">
+  <!-- Selección de Tipo de Documento -->
+  <div class="form-group">
+    <label for="tipoDocumento" class="form-label">Tipo de Documento:</label>
+    <select
+      id="tipoDocumento"
+      class="form-select"
+      [(ngModel)]="tipoDocumento"
+      (change)="verificarCampos()"
+    >
+      <option value="" disabled selected>Selecciona un tipo</option>
+      <option *ngFor="let tipo of tiposDocumento" [value]="tipo.valor">
+        {{ tipo.descripcion }}
+      </option>
+    </select>
   </div>
-  
+
+  <!-- Entrada de Número de Documento -->
+  <div class="form-group">
+    <label for="numeroDocumento" class="form-label">Número de Documento:</label>
+    <input
+      type="text"
+      id="numeroDocumento"
+      class="form-input"
+      [(ngModel)]="numeroDocumento"
+      (input)="verificarCampos()"
+      placeholder="Ingresa tu número de documento"
+      maxlength="11"
+    />
+  </div>
+
+  <!-- Botón de Búsqueda -->
+  <div class="form-group">
+    <button
+      class="btn btn-primary"
+      [disabled]="!botonHabilitado"
+      (click)="buscarCliente()"
+    >
+      Buscar Cliente
+    </button>
+  </div>
+</div>
+
